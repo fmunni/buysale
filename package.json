@@ -1,0 +1,23 @@
+{
+  "name": "buysale",
+  "version": "1.0.0",
+  "description": "An ecommerce web app",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fmunni/buysale.git"
+  },
+  "author": "farhana munni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fmunni/buysale/issues"
+  },
+  "homepage": "https://github.com/fmunni/buysale#readme"
+}
