@@ -9,13 +9,26 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname, "ui/build")));
 
-app.get("/getuser", (req, res) =>
-  res.send({ users: ["mak", "munni", "farhana"] })
-);
+app.get("/api/products", (req, res) => {
+  const products = [
+    {
+      name: "Toyota",
+      price: 24.0,
+      seller: "munni",
+      listingDate: "12/09/2019"
+    },
+    {
+      name: "JAVA for dummies",
+      price: 25.0,
+      seller: "mak",
+      listingDate: "12/3/2019"
+    },
+    { name: "Iphone", price: 30.0, seller: "abcd", listingDate: "12/1/2019" }
+  ];
 
-app.post("/finduser", (req, res) => {
-  //console.log("received request ", req.body.name);
-  res.send(`<h1> my name is ${req.body.name} </h1>`);
+  res.send({
+    products: products
+  });
 });
 
 app.get("/", (req, res) => res.send("HomePage for my ecommerce site."));
