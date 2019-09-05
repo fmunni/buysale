@@ -1,3 +1,3 @@
 # buysale
 
-- buysale is an ecommerce site.npm i
+- buysale is an ecommerce site.
